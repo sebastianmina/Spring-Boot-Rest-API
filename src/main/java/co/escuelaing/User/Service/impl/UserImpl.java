@@ -6,13 +6,14 @@ import co.escuelaing.User.Data.User;
 //import co.escuelaing.User.Dto.UserDTO;
 import co.escuelaing.User.Service.UserInterface;
 
-//import org.springframework.stereotype.Service;
-
 import java.util.ArrayList;
 //import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class UserImpl implements UserInterface {
 
     private final ConcurrentHashMap<String,User> users = new ConcurrentHashMap<>();
