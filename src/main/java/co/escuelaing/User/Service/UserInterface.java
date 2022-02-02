@@ -2,7 +2,7 @@ package co.escuelaing.User.Service;
 import java.util.List;
 
 import co.escuelaing.User.Data.User;
-import co.escuelaing.User.Dto.UserDTO;
+//import co.escuelaing.User.Dto.UserDTO;
 
 public interface UserInterface {
     
@@ -14,5 +14,5 @@ public interface UserInterface {
 
      void deleteById( String id );
 
-     User update( UserDTO userDto, String userId );
+     User update( User newUser, String userId );
 }
